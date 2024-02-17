@@ -839,9 +839,9 @@ img {
     margin-bottom: 10px;
     font-size: var(--h3-font-size);
 }
-.services-content .services-desc{
-    /* padding: 0rem 2rem; */
-}
+/* .services-content .services-desc{
+    padding: 0rem 2rem;
+} */
 
 .services-content .services__title i{
     font-size: 4rem;
