@@ -935,6 +935,52 @@ img {
 
 /* Why Choose Us */
 
+  .why-choose-us {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .reason {
+    position: relative;
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+.reason h3{
+    margin-bottom: 10px;
+}
+
+  .reason:hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(208, 178, 0, 0.2); /* RGBA value for the color */
+    border-radius: 10px;
+  }
+  
+  .reason:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .reason h3 {
+    color: #333;
+  }
+  
+  .reason p {
+    color: #666;
+  }
+  
+
 
 .row{
     display: flex;
@@ -1023,6 +1069,7 @@ img {
 .services-content .services__title i{
     font-size: 3rem;
     margin-right: 10px;
+    color: #d0b200;
 }
 
 .services-content .services-head{

@@ -338,29 +338,30 @@ navLink.forEach((n) => n.addEventListener("click", linkAction));
 
 // window.addEventListener("scroll", scrollHeader);
 
-// // show scroll top
 
-// var lastScrollTop = 0;
+// show scroll top
 
-// window.addEventListener("scroll", () => {
-//     var st = window.pageYOffset || document.documentElement.scrollTop;
-//     const scrollDown = document.getElementById("scroll-down");
-//     const scrollUp = document.getElementById("scroll-up");
+var lastScrollTop = 0;
 
-//     if (st > lastScrollTop) {
-//         scrollUp.classList.remove("show-scroll");
+window.addEventListener("scroll", () => {
+    var st = window.pageYOffset || document.documentElement.scrollTop;
+    const scrollDown = document.getElementById("scroll-down");
+    const scrollUp = document.getElementById("scroll-up");
 
-//         if (st >= 560) scrollDown.classList.add("show-scroll");
-//         else scrollUp.classList.remove("show-scroll");
-//     } else {
-//         scrollDown.classList.remove("show-scroll");
-//         if (st >= 560) scrollUp.classList.add("show-scroll");
-//         else scrollUp.classList.remove("show-scroll");
-//     }
+    if (st > lastScrollTop) {
+        scrollUp.classList.remove("show-scroll");
 
-//     lastScrollTop = st <= 0 ? 0 : st;
-// });
-// // window.addEventListener("scroll", scrollDown);
+        if (st >= 560) scrollDown.classList.add("show-scroll");
+        else scrollUp.classList.remove("show-scroll");
+    } else {
+        scrollDown.classList.remove("show-scroll");
+        if (st >= 560) scrollUp.classList.add("show-scroll");
+        else scrollUp.classList.remove("show-scroll");
+    }
+
+    lastScrollTop = st <= 0 ? 0 : st;
+});
+// window.addEventListener("scroll", scrollDown);
 
 // // change theme code
 
