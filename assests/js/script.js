@@ -636,7 +636,7 @@ navLink.forEach((n) => n.addEventListener("click", linkAction));
           startValue++;
           number.textContent = startValue + "+";
         }
-      }, 20);
+      }, 50);
        // Adjust the interval duration for smoother animation
     });
   }
