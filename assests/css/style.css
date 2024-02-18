@@ -992,7 +992,7 @@ img {
     background: var(--container-color);
     border-radius: 5px;
     border: 2px solid transparent;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     /* border: 2px solid var(--first-color); */
 }
 
