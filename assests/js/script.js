@@ -643,3 +643,24 @@ navLink.forEach((n) => n.addEventListener("click", linkAction));
 
   // Call the function when the page is loaded
   window.onload = incrementNumbers;
+
+
+  // JavaScript functions to handle modal
+function openModal(imageSrc) {
+  var modal = document.getElementById("myModal");
+  var modalImg = document.getElementById("modalImage");
+  modal.style.display = "block";
+  modalImg.src = imageSrc;
+}
+
+function closeModal() {
+  var modal = document.getElementById("myModal");
+  modal.style.display = "none";
+}
+
+// Prevent event propagation when clicking on the modal content
+document.getElementById("myModal").addEventListener("click", function(event) {
+  if (event.target === this) {
+    closeModal();
+  }
+});
