@@ -53,6 +53,7 @@
     --z-modal: 1000;
 }
 
+
 @media screen and (min-width: 968px) {
     :root {
         --big-font-size: 3rem;
@@ -138,6 +139,9 @@ img {
 }
 
 .section {
+    padding: 2rem 0 4rem;
+}
+.article {
     padding: 2rem 0 4rem;
 }
 
@@ -767,6 +771,68 @@ img {
     color: var(--first-color);
 }
 
+/* Statistical Data */
+
+
+.stat__container {
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  .stat-box {
+    width: 80%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);   
+    position: relative;
+    z-index: 1;
+    justify-content: center;
+  }
+  .stat-box , .stat-row{
+    color: #000;
+    text-align: center;
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+  }
+
+  .stat-item {
+    margin: 0 10px;
+    flex: 1;
+  }
+
+  .stat-number {
+    font-size: 36px;
+    font-weight: bold;
+  }
+
+  .stat-label {
+    font-size: 18px;
+  }
+
+  .separator {
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: #d0b200;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 0;
+  }
+
+  /* Media Queries for responsive design */
+  @media only screen and (max-width: 767px) {
+    .stat-box{
+        flex-direction: column;
+        gap: 2rem;
+    }
+  }
+
 
 /* Why Choose Us */
 
@@ -837,8 +903,9 @@ img {
     justify-content: start;
     align-items: center;
     margin-bottom: 10px;
-    font-size: var(--h3-font-size);
+    
 }
+
 /* .services-content .services-desc{
     padding: 0rem 2rem;
 } */
@@ -848,7 +915,6 @@ img {
 }
 
 .services-content .items span{
-
     margin-right: 0.5rem;
         font-size: 1.5rem;
         color: var(--first-color);
@@ -856,7 +922,8 @@ img {
 
 
 .services-content .services__title i{
-    font-size: 4rem;
+    font-size: 3rem;
+    margin-right: 10px;
 }
 
 .services-content .services-head{
@@ -865,6 +932,7 @@ img {
     border-bottom: 2px transparent;
     margin-bottom: 10px;
     font-weight: 900;
+    font-size: var(--h3-font-size);
 }
 
 .services-content:hover {
@@ -1581,6 +1649,9 @@ body.dark-theme .exp__modal-close {
         margin: 0;
     }
     .section {
+        padding: 3rem 0 2rem;
+    }
+    .article {
         padding: 3rem 0 2rem;
     }
     .section__subtitle {
