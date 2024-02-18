@@ -437,7 +437,7 @@ img {
     
     .home__img .floating__image{
         position: absolute;
-        bottom: 20px;
+        bottom: 0px;
         left:50px;
         bottom: 5px; 
         left: 50%;
@@ -446,7 +446,7 @@ img {
     }
     .home__img .floating__image img{
         height: 5rem;
-        width: 12rem;
+        width: 10rem;
     }
 }
 
