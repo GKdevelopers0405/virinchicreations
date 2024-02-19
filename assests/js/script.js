@@ -137,11 +137,13 @@
 
 const navMenu = document.getElementById("nav-menu"),
     navToggle = document.getElementById("nav-toggle"),
-    navClose = document.getElementById("nav-close");
+    navClose = document.getElementById("nav-close"),
+    navIcon = document.getElementById("nav-icon");
 
 if (navToggle) {
     navToggle.addEventListener("click", () => {
-        navMenu.classList.add("show-menu");
+        navMenu.classList.toggle("show-menu");
+        navIcon.classList.toggle.
     });
 }
 
